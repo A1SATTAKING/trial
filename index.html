@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Betting Results</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Betting Results</h1>
+    </header>
+
+    <div class="info">
+        <p>Current City 1: <span id="cityName1"></span></p>
+        <p>Number: <span id="number"></span></p>
+        <p>Current City 2: <span id="cityName2"></span></p>
+        <p>Next City: <span id="nextCity"></span></p>
+        <!-- <p>Live Timer: <span id="liveTimer"></span></p> -->
+        <div id="google-time"></div>
+
+    </div>
+
+    <div class="overflow-x-auto">
+        <table class="min-w-full border-collapse border border-transparent-500">
+            <thead>
+                <tr class="bg-transparent text-white">
+                    <th class="border border-transparent-500 p-2">सट्टा का नाम</th>
+                    <th class="border border-transparent-500 p-2">कल आया था</th>
+                    <th class="border border-transparent-500 p-2">आज का रिज़ल्ट</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- Table rows will be dynamically inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <a href="admin.html" class="link">
+        <div>@</div>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
